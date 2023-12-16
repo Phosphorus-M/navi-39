@@ -53,6 +53,44 @@ screens:
         user: false
         system: true
       groups:
+        Custom:
+          description: Custom applications which I use.
+          default: true
+          packages:
+            - Mozilla Firefox: org.mozilla.firefox
+            - Flatseal (Permission Manager): com.github.tchx84.Flatseal
+            - Extension Manager: com.mattjakeman.ExtensionManager
+            - Deja Dup Backups: org.gnome.DejaDup
+            - Celluloid: io.github.celluloid_player.Celluloid
+            - CopyQ: com.github.hluk.copyq
+            - BlackBox: com.raggesilver.BlackBox
+            - Steam: com.valvesoftware.Steam
+            - Discord: com.discordapp.Discord
+            - Zoom: us.zoom.Zoom
+            - mGBA: io.mgba.mGBA
+            - Image Converter: io.gitlab.adhami3310.Converter
+            - Fondo: com.github.calo001.fondo
+            - Clapper: com.github.rafostar.Clapper
+            - Stremio: com.stremio.Stremio
+            - Shortwave: de.haeckerfelix.Shortwave
+            - OBS Studio: com.obsproject.Studio
+            - Amberol: io.bassi.Amberol
+            - Resonance: io.github.nate_xyz.Resonance
+            - Upscaler: io.gitlab.theevilskeleton.Upscaler
+            - Smile: it.mijorus.smile
+            - Flameshot: org.flameshot.Flameshot
+            - Bitwarden: com.bitwarden.desktop
+            - TubeConverter: org.nickvision.tubeconverter
+            - Flowblade: io.github.jliljebl.Flowblade
+            - Audacity: org.audacityteam.Audacity
+            - Pitivi: org.pitivi.Pitivi
+            - Telegram Desktop: org.telegram.desktop
+            - DBeaver: io.dbeaver.DBeaverCommunity
+            - Foliate: com.github.johnfactotum.Foliate
+            - Figma: io.github.Figma_Linux.figma_linux
+            - Kdenlive: org.kde.kdenlive
+            - Vivaldi: com.vivaldi.Vivaldi
+            - Insomnia: rest.insomnia.Insomnia
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
@@ -68,6 +106,8 @@ screens:
             - Document Scanner: org.gnome.SimpleScan
             - Document Viewer: org.gnome.Evince
             - Extension Manager: com.mattjakeman.ExtensionManager
+            - Font Downloader: org.gustavoperedo.FontDownloader
+            - Font Manager: org.gnome.FontManager
             - Font Viewer: org.gnome.font-viewer
             - Image Viewer: org.gnome.Loupe
             - Logs: org.gnome.Logs
@@ -117,6 +157,8 @@ screens:
             - Slack: com.slack.Slack
             - Standard Notes: org.standardnotes.standardnotes
             - Thunderbird Email: org.mozilla.Thunderbird
+            - Foliate: com.github.johnfactotum.Foliate
+            - Figma: io.github.Figma_Linux.figma_linux
         Streaming:
           description: Stream to the Internet.
           default: false
@@ -126,6 +168,76 @@ screens:
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
             - Boatswain for Streamdeck: com.feaneron.Boatswain
+        Coding:
+          description: Tools for the Developer
+          default: false
+          packages:
+            - Blackbox: com.raggesilver.BlackBox
+            - Android Studio: com.google.AndroidStudio
+            - Arduino IDE v2: cc.arduino.IDE2
+            - Postman: com.getpostman.Postman
+            - Pods: com.github.marhkb.Pods
+            - Visual Studio Code: com.visualstudio.code
+            - PyCharm: com.jetbrains.PyCharm-Community
+            - Clion: com.jetbrains.CLion
+            - Goland: com.jetbrains.GoLand
+            - IntelliJ IDEA Community: com.jetbrains.IntelliJ-IDEA-Community
+            - IntelliJ IDEA Ultimate: com.jetbrains.IntelliJ-IDEA-Ultimate
+            - Eclipse: org.eclipse.Java
+            - Rider: com.jetbrains.Rider
+            - WebStorm: com.jetbrains.WebStorm
+            - DataGrip: com.jetbrains.DataGrip
+            - PhpStorm: com.jetbrains.PhpStorm
+            - DBeaver: io.dbeaver.DBeaverCommunity
+            - MariaDB Client: io.dbeaver.DBeaverCommunity.Client.mariadb
+            - Insomnia: rest.insomnia.Insomnia
+            - GitKraken: com.axosoft.GitKraken
+            - Github Desktop: io.github.shiftey.Desktop
+            - Builder: org.gnome.Builder
+            - Netbeans: org.apache.netbeans
+            - Guiscrcpy: in.srev.guiscrcpy
+            - Godot: org.godotengine.Godot
+            - Unity Hub: com.unity.UnityHub
+            - Gaphor: org.gaphor.Gaphor
+            - Beekeeper Studio: io.beekeeperstudio.Studio
+        Customization:
+          description: Tools for the customization
+          default: false
+          packages:
+            - Gradience: com.github.GradienceTeam.Gradience
+            - Fondo: com.github.calo001.fondo
+            - GDM Settings: io.github.realmazharhussain.GdmSettings
+        Misc:
+          description: Other apps
+          default: false
+          packages:
+            - CopyQ: com.github.hluk.copyq
+            - Image Converter: io.gitlab.adhami3310.Converter
+            - Upscaler: io.gitlab.theevilskeleton.Upscaler
+            - Smile: it.mijorus.smile
+            - Flameshot: org.flameshot.Flameshot
+            - LiveCaptions: net.sapples.LiveCaptions
+            - Bitwarden: com.bitwarden.desktop
+            - TubeConverter: org.nickvision.tubeconverter
+        Multimedia:
+          description: Apps to enjoy your media
+          default: false
+          packages:
+            - Clapper: com.github.rafostar.Clapper
+            - Stremio: com.stremio.Stremio
+            - Shortwave: de.haeckerfelix.Shortwave
+            - Amberol: io.bassi.Amberol
+            - Celluloid: io.github.celluloid_player.Celluloid
+            - Resonance: io.github.nate_xyz.Resonance
+        Editing:
+          description: Apps to edit
+          default: false
+          packages:
+            - Flowblade: io.github.jliljebl.Flowblade
+            - Audacity: org.audacityteam.Audacity
+            - Pitivi: org.pitivi.Pitivi
+            - Telegram Desktop: org.telegram.desktop
+            - Kdenlive: org.kde.kdenlive
 
   final-screen:
     source: yafti.screen.title

@@ -20,6 +20,9 @@ ARG RECIPE=recipe.yml
 # The default image registry to write to policy.json and cosign.yaml
 ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
+# dx specific files come from the dx directory in this repo
+COPY dx/etc/yum.repos.d/ /etc/yum.repos.d/
+COPY workarounds.sh /tmp/
 
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
@@ -41,6 +44,8 @@ COPY modules /tmp/modules/
 # `yq` is used for parsing the yaml configuration
 # It is copied from the official container image since it's not available as an RPM.
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+
+RUN /tmp/workarounds.sh
 
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
