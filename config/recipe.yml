@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: startingpoint
+name: navi-39
 # description will be included in the image's metadata
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 
@@ -33,6 +33,7 @@ modules:
       - flatpak-builder
       - libappstream-glib
       - solaar
+      - openh264
       - neovim
       - git-credential-libsecret
       - docker
