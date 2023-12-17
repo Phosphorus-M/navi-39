@@ -68,6 +68,7 @@ screens:
             - Discord: com.discordapp.Discord
             - Zoom: us.zoom.Zoom
             - mGBA: io.mgba.mGBA
+            - melonDS: net.kuribo64.melonDS
             - Image Converter: io.gitlab.adhami3310.Converter
             - Fondo: com.github.calo001.fondo
             - Clapper: com.github.rafostar.Clapper
