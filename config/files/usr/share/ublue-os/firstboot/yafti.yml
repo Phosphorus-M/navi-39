@@ -92,6 +92,7 @@ screens:
             - Kdenlive: org.kde.kdenlive
             - Vivaldi: com.vivaldi.Vivaldi
             - Insomnia: rest.insomnia.Insomnia
+            - Yuzu: org.yuzu_emu.yuzu
         Core GNOME Apps:
           description: Core system applications for the GNOME desktop environment.
           default: true
@@ -148,6 +149,11 @@ screens:
             - MangoHUD (Utility): org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
             - SteamTinkerLaunch (Utility): com.valvesoftware.Steam.Utility.steamtinkerlaunch
             - Proton Updater for Steam: net.davidotek.pupgui2
+            - Yuzu: org.yuzu_emu.yuzu
+            - Dolphin: org.DolphinEmu.dolphin-emu
+            - PCSX2: net.pcsx2.PCSX2
+            - melonDS: net.kuribo64.melonDS
+            - Citra: org.citra_emu.citra
         Office:
           description: Boost your productivity.
           default: false
