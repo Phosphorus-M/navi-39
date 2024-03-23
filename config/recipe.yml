@@ -54,6 +54,8 @@ modules:
       - binutils
       - gcc
       - gcc-c++
+      - clang
+      - rust-clang-sys+clang_17_0-devel
       - glibc-devel
       - libtool
       - make
